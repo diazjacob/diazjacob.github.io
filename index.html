@@ -1,13 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Jacob Diaz's online portfolio">
+        <!-- I don't think I really need SEO -->
+        <meta name="author" content="Jacob Diaz">
+        <title>Title</title>
+        <link rel="stylesheet" href="sitestyle.css">
+    </head>
+    <body>
 
-<h3>My First Heading</h3>
-<p>My first paragraph.</p>
+    <header>
+        <!-- The entire header -->
+        <div class="container">
 
-</body>
+            <!-- My name stuff as an id and not class-->
+            <!-- IDs are generallu unique items, classes are reused-->
+            <div id="branding">
+                <div>
+                    <h1>Jacob Diaz</h1>
+                </div>
+                <div>
+                    <p><span class="highlight">Computer Science / Mathematics</span></p>
+                </div>
+            </div>
+
+            <!-- strictly HTML5 code, this is the nav bar-->
+            <nav>
+                <!-- an unordered list-->
+                <ul>
+                    <!-- A list element-->
+                    <li>
+                        <!-- we make a link object-->
+                        <!-- with a local site html file address-->
+                        <a href="index.html"> Home </a>
+                    </li>
+                    <li>
+                        <a href="index.html"> About </a>
+                    </li>
+                    <li>
+                        <a href="index.html"> Projects </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>
+                Lorem Ipsum
+            </h1>
+            <p>
+                 Mauris dictum libero leo, ut pharetra leo blandit ac. Cras sem ipsum, molestie in metus eget, mattis ullamcorper elit. Nulla facilisi. Duis finibus massa quis elit sagittis, sed tristique purus tristique. Aliquam vel dolor mollis, lacinia quam ut, molestie diam.
+
+                Morbi euismod risus a pharetra cursus. Proin nunc nibh, porta dapibus magna in, faucibus euismod mauris. Nunc fringilla leo fermentum pretium tempor. Aenean a rhoncus odio, sed cursus neque. Fusce condimentum orci ut ante cursus, dapibus porttitor nibh pellentesque. Suspendisse id vestibulum lorem. Nulla facilisi. Aliquam ipsum tortor, mollis nec massa quis, imperdiet efficitur leo. Nullam molestie porta ante sit amet tempor. In fringilla euismod dui, id semper enim volutpat a. Phasellus bibendum venenatis urna, ac dignissim mauris consequat eget.
+            </p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <div class="boxL">
+                <h3>Project 1</h3>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultricies venenatis massa, vitae imperdiet dui hendrerit et. Curabitur semper non lorem ut auctor.</p>
+            </div>
+            <div class="boxR">
+                <h3>Project 2</h3>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultricies venenatis massa, vitae imperdiet dui hendrerit et. Curabitur semper non lorem ut auctor.</p>
+            </div>
+            <div class="boxL">
+                <h3>Project 3</h3>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultricies venenatis massa, vitae imperdiet dui hendrerit et. Curabitur semper non lorem ut auctor.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>
+            Jacob Diaz, Copyright &copy; 2020
+        </p>
+    </footer>
+    </body>
 </html>

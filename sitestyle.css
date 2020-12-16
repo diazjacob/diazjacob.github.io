@@ -1,0 +1,94 @@
+/*container is a class. Notice that classes have a '.'
+and IDs will have a # at the start :)*/
+
+:root{
+    --background: lightgrey;
+    --maincolor: #35424a;
+    --accentcolor: coral;
+    --fontcolor: white;
+}
+
+/* The body of the whole page */
+body{
+    font-family: Arial, Helvetica, sans-serif, Consolas;
+    font-size: 15px;
+    line-height: 1.5;
+
+    padding: 0;
+    margin: 0;
+    background-color: var(--background);
+}
+
+    /* THE GLOBAL STUFF */
+
+/* The CORE container, this is basically global settings*/
+.container{
+    width: 80%;
+    margin:auto;
+    overflow:hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+    /* THE HEADER CODE */
+
+/* header setting */
+header {
+    background: var(--maincolor);
+    color: var(--fontcolor);
+    padding-top: 30px;
+    min-height:  70px;
+    border-bottom: var(--accentcolor) 5px solid;
+}
+
+/* The 'a' tag when it's within the header */
+header a{
+    color: var(--fontcolor);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+/* The 'ul' unordered list in the header
+the ul naturally has padding and margins, we're removing them*/
+
+/* each 'li' list item in the header */
+header li{
+    float:left;
+    display:inline;
+    /* top right bottom left*/
+    padding: 0 20px 0 20px;
+}
+
+/* The branding ID within the header
+We want to float it left with the nav on the right*/
+header #branding
+{
+    float: left;
+}
+
+/*  Reaching into the header's branding h1
+and removing margins !*/
+header #branding h1{
+    margin: 0;
+    padding: 0;
+}
+
+header #branding p{
+    margin: 0;
+    padding: 10px 0 20px 0;
+    font-size: 16px;
+}
+
+header nav{
+    float: right;
+    margin-top: 25px;
+}
+
+header .highlight, header .current a{
+    color: var(--accentcolor);
+    font-weight: bold;
+}
