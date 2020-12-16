@@ -6,6 +6,7 @@ and IDs will have a # at the start :)*/
     --maincolor: #35424a;
     --accentcolor: coral;
     --fontcolor: white;
+    --hovercolor: lightgrey;
 }
 
 /* The body of the whole page */
@@ -92,3 +93,36 @@ header .highlight, header .current a{
     color: var(--accentcolor);
     font-weight: bold;
 }
+
+header a:hover{
+    color: var(--hovercolor);
+    font-weight: bold;
+}
+
+    /* THE SHOWCASE CODE */
+
+#showcase{
+    min-height: 400px;
+    /* the axes are X and then Y for the position*/
+    background: url('../img/boi.png') no-repeat 50% 45%;
+
+    text-align:  center;
+    color: #ffffff;
+}
+
+#showcase h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
