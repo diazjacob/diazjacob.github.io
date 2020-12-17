@@ -41,6 +41,14 @@ ul{
     width: 80%;
 }
 
+.button_1{
+    height: 38px;
+    background: var(--accentcolor);
+    border: none;
+    padding: 0 20px 0 20px;
+    color: white;
+}
+
     /* THE HEADER CODE */
 
 /* header setting */
@@ -67,7 +75,7 @@ the ul naturally has padding and margins, we're removing them*/
 header li{
     float:left;
     display:inline;
-    /* top right bottom left*/
+    /* top right bottom left <------------------------------------*/
     padding: 0 20px 0 20px;
 }
 
@@ -158,15 +166,15 @@ header a:hover{
 .box h2{
     text-align: center;
     padding-top: 15px;
-    margin-top: 10px;
-    font-size: 40px;
+    margin: 10px;
+    font-size: 30px;
 }
 
 @media screen and (min-width: 1001px)
 {
     .box img{
         width: 45%;
-        padding: 0 0 0 0;
+        padding: 25px 0 0 0;
         margin: 0;
         position: center;
     }
@@ -176,6 +184,8 @@ header a:hover{
         text-align: left;
         padding: 0;
         margin: 10px 0;
+        font-size: 1.4vw;
+
     }
 
     .boxL img{
@@ -204,10 +214,58 @@ header a:hover{
         padding-bottom: 15px;
         margin-bottom: 15px;
         border-bottom: var(--maincolor) solid;
+        font-size: 18px;
     }
+
 }
 
-    /* CHECK OUT MROE SETTINGS*/
+    /* CHECK OUT MORE SETTINGS*/
+
+#seemore{
+    background: var(--maincolor);
+    margin: 30px 20px 20px 20px;
+    padding: 0;
+}
+
+#seemore .container{
+    width: 95%;
+}
+
+@media screen and (min-width: 801px)
+{
+    #seemore h1{
+        color: var(--fontcolor);
+        float: left;
+        text-align: center;
+    }
+
+    #seemore .button_1{
+        width: 30%;
+        font-size: 20px;
+        background: var(--accentcolor);
+        border: none;
+        color: white;
+        float: right;
+        margin: 20px 0 20px 0;
+    }
+}
+@media screen and (max-width: 800px)
+{
+    #seemore h1{
+        color: var(--fontcolor);
+        text-align: center;
+    }
+
+    #seemore .button_1{
+        position: center;
+        width: 100%;
+        font-size: 20px;
+        background: var(--accentcolor);
+        border: none;
+        color: white;
+        margin: 0 15px 30px 15px;
+    }
+}
 
 
     /* FOOTER SETTINGS */
@@ -215,21 +273,22 @@ header a:hover{
 footer {
     background-color: var(--maincolor);
     overflow: auto;
+    margin: 0;
 }
-
 
 footer #copyright{
     color: var(--fontcolor);
-    padding: 20px;
+    padding: 20px 0 25px 50px;
     margin: 0;
     float: left;
 }
 
 footer #thanks{
     color: var(--fontcolor);
-    padding: 20px;
+    padding: 20px 50px 25px 0;
     margin: 0;
     float: right;
+    font-weight: bolder;
 }
 
 
