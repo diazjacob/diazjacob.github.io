@@ -87,7 +87,7 @@ header #branding h1{
 
 header #branding p{
     margin: 0;
-    padding: 10px 0 20px 0;
+    padding: 10px 0 30px 0;
     font-size: 16px;
 }
 
@@ -136,7 +136,7 @@ header a:hover{
     color: var(--fontcolor);
     margin: 0;
     padding: 20px;
-    font-size: 35px;
+    font-size: 45px;
     /*
     text-align: center;
     font-size: 40px;
@@ -150,15 +150,20 @@ header a:hover{
 }
 
 .box{
-    margin:auto;
     overflow:hidden;
     position: center;
     margin-top: 10px;
 }
 
-@media screen and (min-width: 801px)
-{
+.box h2{
+    text-align: center;
+    padding-top: 15px;
+    margin-top: 10px;
+    font-size: 40px;
+}
 
+@media screen and (min-width: 1001px)
+{
     .box img{
         width: 45%;
         padding: 0 0 0 0;
@@ -166,12 +171,6 @@ header a:hover{
         position: center;
     }
 
-    .box h3{
-        text-align: center;
-        padding: 0px;
-        margin-top: 10px;
-        font-size: 30px;
-    }
     .box p{
         width: 50%;
         text-align: left;
@@ -195,14 +194,9 @@ header a:hover{
     }
 }
 
-@media screen and (max-width: 800px)
+@media screen and (max-width: 1000px)
 {
 
-    .box h3{
-        text-align: center;
-        padding: 0;
-        font-size: 30px;
-    }
     .box p {
         display: block;
         width: 100%;
@@ -213,15 +207,30 @@ header a:hover{
     }
 }
 
+    /* CHECK OUT MROE SETTINGS*/
 
 
+    /* FOOTER SETTINGS */
+
+footer {
+    background-color: var(--maincolor);
+    overflow: auto;
+}
 
 
+footer #copyright{
+    color: var(--fontcolor);
+    padding: 20px;
+    margin: 0;
+    float: left;
+}
 
-
-
-
-
+footer #thanks{
+    color: var(--fontcolor);
+    padding: 20px;
+    margin: 0;
+    float: right;
+}
 
 
 
