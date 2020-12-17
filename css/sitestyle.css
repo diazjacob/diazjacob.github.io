@@ -229,7 +229,7 @@ header a:hover{
 }
 
 #seemore .container{
-    width: 95%;
+    width: 90%;
 }
 
 #seemore .button_1:hover {
@@ -263,13 +263,13 @@ header a:hover{
     }
 
     #seemore .button_1{
-        position: center;
+        position: relative;
         width: 100%;
         font-size: 20px;
         background: var(--accentcolor);
         border: none;
         color: white;
-        margin: 0 15px 30px 15px;
+        margin-bottom: 30px;
     }
 }
 
