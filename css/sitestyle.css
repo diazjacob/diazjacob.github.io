@@ -46,7 +46,7 @@ ul{
     height: 38px;
     background: var(--accentcolor);
     border: none;
-    padding: 0 20px 0 20px;
+    padding: 0 25px 0 25px;
     color: white;
 }
 
@@ -269,7 +269,17 @@ header a:hover{
         background: var(--accentcolor);
         border: none;
         color: white;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+        padding: 10px 0 35px 0;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    #seemore h1{
+        color: var(--fontcolor);
+        text-align: center;
+        font-size: 18px;
     }
 }
 
