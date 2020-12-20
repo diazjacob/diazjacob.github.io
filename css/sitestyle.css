@@ -2,10 +2,13 @@
 and IDs will have a # at the start :)*/
 
 :root{
-    --background: lightgrey;
+    --background: #eaeaea;
+    --background2: #a2a2a2;
     --maincolor: #35424a;
+    --maincolor2: #35424a;
     --accentcolor: #ff7f50;
     --accentdarker: #e36d41;
+
     --fontlight: white;
     --fontdark: black;
     --hovercolor: lightgrey;
@@ -19,7 +22,7 @@ body{
 
     padding: 0;
     margin: 0;
-    background-color: var(--background);
+    background: linear-gradient(to top right, var(--background2), var(--background));
 }
 
     /* THE GLOBAL STUFF */
@@ -146,27 +149,6 @@ header a:hover{
     font-weight: bold;
 }
 
-    /* THE SHOWCASE CODE */
-
-#showcase{
-    min-height: 400px;
-    /* the axes are X and then Y for the position*/
-    background: url('../img/boi.png') no-repeat center top;
-    width: 100%;
-    color: #ffffff;
-
-    text-align: center;
-}
-
-
-#showcase p{
-    font-size: 22px;
-    position: center;
-    padding-top: 150px;
-    padding-left: 30%;
-    padding-right: 30%;
-
-}
 
     /* PROJECT BOXES */
 
@@ -192,32 +174,38 @@ header a:hover{
 .box{
     overflow:hidden;
     position: center;
-    margin-top: 10px;
+    margin: 20px 20px;
 }
 
 .box h2{
     text-align: center;
     padding-top: 15px;
     margin: 10px;
-    font-size: 30px;
+    font-size: 35px;
     color: var(--fontdark);
 }
+
+.box img{
+    box-shadow: 2px 2px 16px;
+}
+
 
 @media screen and (min-width: 1001px)
 {
     .box img{
-        width: 45%;
-        padding: 25px 0 0 0;
-        margin: 0;
+        width: 35%;
+        padding: 0;
+        margin: 70px 35px 35px 35px;
         position: center;
     }
 
     .box p{
-        width: 50%;
-        text-align: left;
+        width: 56%;
+        text-align: center;
         padding: 0;
         margin: 10px 0;
-        font-size: 1.4vw;
+        font-size: min(1.4vw, 24px);
+        /*font-size: 1.4vw;*/
         color: var(--fontdark);
 
     }
@@ -253,13 +241,17 @@ header a:hover{
         color: var(--fontdark);
     }
 
+    .box img{
+        margin-top: 15px;
+    }
+
 }
 
     /* CHECK OUT MORE SETTINGS*/
 
 #seemore{
     background: var(--maincolor);
-    margin: 20px 20px 20px 20px;
+    margin: 40px 20px 20px 20px;
     padding: 0;
 }
 
@@ -274,6 +266,7 @@ header a:hover{
 
 @media screen and (min-width: 801px)
 {
+
     #seemore h1{
         color: var(--fontlight);
         float: left;
@@ -343,4 +336,67 @@ footer #thanks{
 }
 
 
+    /*  ABOUTME SETTINGS */
+
+#aboutme{
+    overflow: hidden;
+    margin: 0 0 40px 0;
+    padding: 0;
+}
+
+.textblock h1{
+    margin: 20px 0 35px 0;
+    padding: 10px;
+    font-size: 30px;
+    background: var(--maincolor);
+    color: var(--fontlight);
+}
+
+.textblock p{
+    font-size: 19px;
+    margin: 5px 5px 50px 5px;
+    padding: 0;
+}
+
+@media screen and (min-width: 801px)
+{
+    .textblock .textblockL {
+        width: 50%;
+        float: left;
+    }
+
+    .textblock .textblockR {
+        width: 50%;
+        float: right;
+    }
+
+
+
+}
+@media screen and (max-width: 800px)
+{
+
+}
+
+/* THE SHOWCASE CODE */
+
+#showcase{
+    min-height: 400px;
+    /* the axes are X and then Y for the position*/
+    background: url('../img/boi.png') no-repeat center top;
+    width: 100%;
+    color: #ffffff;
+
+    text-align: center;
+}
+
+
+#showcase p{
+    font-size: 22px;
+    position: center;
+    padding-top: 150px;
+    padding-left: 30%;
+    padding-right: 30%;
+
+}
 
