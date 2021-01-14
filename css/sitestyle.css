@@ -422,8 +422,6 @@ footer #thanks{
     text-decoration: none;
     margin: auto;
     pointer-events: none;
-
-    backdrop-filter: blur(10px);
 }
 
 #projectsmain img{
