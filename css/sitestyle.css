@@ -402,20 +402,55 @@ footer #thanks{
 
     /*   PROJECTS MAIN CODE  */
 
+.projBox{
+    position: relative;
+    float: left;
+}
+
+#projectsmain{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#projectsmain h3{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    text-overflow: ellipsis;
+    text-align: center;
+    font-size: 35px;
+    text-decoration: none;
+    margin: auto;
+    pointer-events: none;
+
+    backdrop-filter: blur(10px);
+}
+
 #projectsmain img{
     box-shadow: 2px 2px 16px;
     color: black;
     padding: 0;
-    width: 45%;
-    margin: 35px 2vw 35px;
-    display: block;
+    width: 100%;
+    margin: 0;
+
     filter: blur(2px);
 }
+#projectsmain img:hover{
+    filter: brightness(100%);
+}
+
+.fontdark{
+    color: var(--fontdark);
+}
+.fontlight{
+    color: var(--fontlight);
+}
+
 
 @media screen and (min-width: 801px)
 {
 
-    #projectsmain img{
+    .projBox{
         width: 45%;
         margin: 35px 2vw 35px;
 
@@ -424,13 +459,21 @@ footer #thanks{
 }
 @media screen and (max-width: 800px)
 {
-    #projectsmain img{
+    #projectsmain h3 {
+        top: 40%;
+    }
 
+    .projBox{
+        margin: 70px auto 20px auto;
+        width: 100%;
+
+    }
+
+    #projectsmain img{
         position: center;
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
-        width: 90%;
-
     }
 }
 
