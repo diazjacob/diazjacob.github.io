@@ -4,12 +4,12 @@ and IDs will have a # at the start :)*/
 :root{
     --background: #eaeaea;
     --background2: #a2a2a2;
-    --maincolor: #35424a;
-    --maincolor2: #35424a;
-    --accentcolor: #ff7f50;
-    --accentdarker: #e36d41;
+    --maincolor: #153b1e;
+    --maincolor2: #204031;
+    --accentcolor: #6697ab;
+    --accentdarker: #4a6c85;
 
-    --fontlight: white;
+    --fontlight: #e8ebee;
     --fontdark: black;
     --hovercolor: lightgrey;
 }
@@ -97,7 +97,7 @@ We want to float it left with the nav on the right*/
     header #branding h1{
         margin: 0;
         padding: 0;
-        font-size: 32px;
+        font-size: 38px;
     }
 
     header #branding p{
@@ -158,7 +158,7 @@ header a:hover{
     color: var(--fontlight);
     margin: 0;
     padding: 20px;
-    font-size: 45px;
+    font-size: 34px;
     /*
     text-align: center;
     font-size: 40px;
@@ -195,7 +195,7 @@ header a:hover{
     .box img{
         width: 35%;
         padding: 0;
-        margin: 70px 35px 35px 35px;
+        margin: 35px 35px 35px 35px;
         position: center;
     }
 
@@ -378,7 +378,7 @@ footer #thanks{
 
 }
 
-/* THE SHOWCASE CODE */
+    /* THE SHOWCASE CODE */
 
 #showcase{
     min-height: 400px;
@@ -399,4 +399,46 @@ footer #thanks{
     padding-right: 30%;
 
 }
+
+    /*   PROJECTS MAIN CODE  */
+
+#projectsmain img{
+    box-shadow: 2px 2px 16px;
+    color: black;
+    padding: 0;
+    width: 45%;
+    margin: 35px 2vw 35px;
+    display: block;
+    filter: blur(2px);
+}
+
+@media screen and (min-width: 801px)
+{
+
+    #projectsmain img{
+        width: 45%;
+        margin: 35px 2vw 35px;
+
+        float: left;
+    }
+}
+@media screen and (max-width: 800px)
+{
+    #projectsmain img{
+
+        position: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+
+    }
+}
+
+
+
+
+
+
+
+
 
