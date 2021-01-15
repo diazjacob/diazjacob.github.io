@@ -450,8 +450,17 @@ footer #thanks{
     color: var(--fontlight);
 }
 
+@media screen and (min-width: 1601px)
+{
 
-@media screen and (min-width: 801px)
+    .projBox{
+        width: 28%;
+        margin: 35px 2vw 35px;
+
+        float: left;
+    }
+}
+@media screen and (max-width: 1600px)
 {
 
     .projBox{
