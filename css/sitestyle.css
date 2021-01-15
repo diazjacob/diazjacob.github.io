@@ -344,6 +344,12 @@ footer #thanks{
     padding: 0;
 }
 
+#aboutme .projlink{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--fontdark);
+}
+
 .textblock h1{
     margin: 20px 0 35px 0;
     padding: 10px;
@@ -473,6 +479,36 @@ footer #thanks{
         margin-left: auto;
         margin-right: auto;
     }
+}
+
+    /*  ARTICLE CODE  */
+
+.article h1{
+    font-size: 51px;
+    margin: 10px 10px 10px 20px;
+    border-bottom: solid;
+}
+
+.article h2{
+    font-size: 42px;
+    margin: 10px 10px 10px 20px;
+    border-bottom: solid;
+}
+
+.article p{
+    font-size: 16px;
+}
+
+.textwrapL{
+    float: left;
+    width: 50%;
+    margin: 20px 20px 10px 20px;
+}
+
+.textwrapR{
+    float: right;
+    width: 50%;
+    margin: 20px 20px 10px 20px;
 }
 
 
