@@ -74,7 +74,7 @@ header a{
 }
 
 /* The 'ul' unordered list in the header
-the ul naturally has padding and margins, we're removing them*/
+the ul naturally has padding and margins, we're removing them */
 
 /* each 'li' list item in the header */
 header li{
@@ -430,6 +430,18 @@ footer #thanks{
     pointer-events: none;
 }
 
+#projectsmain h4{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    text-overflow: ellipsis;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+    margin: auto;
+    pointer-events: none;
+}
+
 #projectsmain img{
     box-shadow: 2px 2px 16px;
     color: black;
@@ -492,6 +504,16 @@ footer #thanks{
 
     /*  ARTICLE CODE  */
 
+.container .article{
+    margin: 2vw 50px 20px 2vw;
+}
+
+.article a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--fontdark);
+}
+
 .article h1{
     font-size: 51px;
     margin: 10px 10px 10px 20px;
@@ -505,19 +527,20 @@ footer #thanks{
 }
 
 .article p{
-    font-size: 16px;
+    font-size: 17px;
+}
+
+.article img{
+    width: 50%;
+    margin: 20px 30px 20px 30px;
 }
 
 .textwrapL{
     float: left;
-    width: 50%;
-    margin: 20px 20px 10px 20px;
 }
 
 .textwrapR{
     float: right;
-    width: 50%;
-    margin: 20px 20px 10px 20px;
 }
 
 
