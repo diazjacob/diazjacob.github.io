@@ -116,10 +116,10 @@
                     <li>
                         2) Clipping and Stencil Buffers
                         <p>
-                            For this effect in particular a lot of selective clipping is use to achieve the stylized look. Each terrain "layer" consists of
+                            For this effect in particular a lot of selective clipping is used to achieve the stylized look. Each terrain "layer" consists of
                             a single plane containing two triangles, and the shaders must perform a clip on a fragment level based on both real-time texture
                             input and world position. All parameters are handed to the shader and it chooses whether to keep or remove
-                            the fragment.
+                            the fragment. In this case we can simply treat fragments as pixels, and so we're performing per-pixel tests.
 
                             <br/>
                             <br/>
