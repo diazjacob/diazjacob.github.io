@@ -455,12 +455,27 @@ footer #thanks{
     filter: brightness(100%);
 }
 
+#projectsmain .ComingSoon{
+    display: none;
+}
+
+#projectsmain .projBox:hover .Title{
+    display: none;
+}
+
+#projectsmain .projBox:hover .ComingSoon{
+    display: contents;
+}
+
+
 .fontdark{
     color: var(--fontdark);
 }
 .fontlight{
     color: var(--fontlight);
 }
+
+
 
 @media screen and (min-width: 1601px)
 {
