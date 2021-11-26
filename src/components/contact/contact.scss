@@ -1,0 +1,152 @@
+@import "../../global.scss";
+
+.contact{
+  //background-color: lightblue;
+
+  background-color: $secondaryColor;
+  display: flex;
+
+  @include mobile{
+    flex-direction: column;
+  }
+
+  .left{
+    flex:1;
+    overflow: hidden;
+
+    @include mobile{
+      width: 100%
+    }
+
+    img{
+      height: 100%;
+      width: 100%;
+      left: 0;
+      transform: translateX(40px) rotate(-20deg) scale(1.25) ;
+
+      @include mobile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: auto;
+
+        width: 100%;
+        height: 100%;
+
+        transform: rotate(20deg) scale(2);
+
+      }
+
+
+    }
+  }
+
+  .right{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: $mainColor;
+
+    @include mobile{
+      flex: 3;
+    }
+
+
+
+    .formBox {
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      background-color: $secondaryColor;
+
+      width:55%;
+      height:80%;
+
+
+
+      padding:0;
+
+      border-radius: 15px;
+      box-shadow: 0 0 115px -8px black;
+
+      overflow: hidden;
+
+      h2 {
+        font-size: 25px;
+        margin: 20px;
+        padding: 0;
+        //background-color: orange;
+
+      }
+
+      form {
+        width: 85%;
+        height: 80%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        input {
+          width: 90%;
+          height: 6%;
+          font-size: 16px;
+        }
+
+        textarea {
+          width: 90%;
+          height: 40%;
+          font-size: 14px;
+
+          resize: none;
+
+        }
+
+        button {
+          width: 150px;
+          height: 40px;
+          color: $secondaryColor;
+          background-color: $mainColor;
+          border: none;
+          border-radius: 12px;
+          font-weight: 500;
+          cursor: pointer;
+
+          &:focus {
+            outline: none;
+          }
+
+          &:hover{
+            //background-color: black;
+            //color: $mainColor;
+
+            transition: all 1s ease;
+
+          }
+        }
+
+        span {
+
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+
+          margin: 20px 0;
+
+          //background-color: red;
+
+          color: green;
+
+        }
+
+      }
+    }
+  }
+}

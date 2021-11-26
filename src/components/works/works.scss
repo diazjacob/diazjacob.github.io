@@ -1,0 +1,180 @@
+@import "../../global.scss";
+
+.works{
+  background-color: $mainColor;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+
+  .arrow{
+    width: 50px;
+    position: absolute;
+    size: 60px;
+
+    overflow: hidden;
+
+    color: $secondaryColor;
+
+    @include mobile{
+      display: none;
+    }
+
+    &.left{
+      left: 100px;
+      //background-color: orange; //for debug
+    }
+    &.right{
+      right: 100px;
+    }
+
+    .arr{
+      font-size: 50px;
+      cursor: pointer;
+    }
+  }
+
+  .slider{
+    height: 550px;
+    display: flex;
+    position: absolute;
+    left: 0;
+
+    //transform: translateX(-100vw);
+
+    transition: all 0.8s ease-out;
+
+    @include mobile{
+      height: 100vh;
+      flex-direction: column;
+      justify-content: center;
+      transform: translateX(0);
+    }
+
+    .container{
+      width: 100vw;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .item{
+        width: 1000px;
+        height: 100%;
+        background-color: white;
+        border-radius: 20px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include mobile{
+          width: 90%;
+          height: 180px;
+          margin: 10px 0;
+        }
+
+        .left{
+          flex: 4;
+          height: 80%;
+          //background-color: lightgreen;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          @include mobile{
+            height:100%;
+            flex: 6;
+          }
+
+          .leftContainer{
+            width: 90%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .imgContainer{
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              background-color: #fcb9a4;
+
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              @include mobile{
+                font-size: 10px;
+                width: 25px;
+                height: 25px;
+              }
+            }
+
+            @include mobile{
+              height: 90%;
+            }
+
+          }
+
+          h2{
+            font-size: 30px;
+            @include mobile{
+              font-size: 20px;
+            }
+          }
+
+          p{
+            font-size: 16px;
+
+            @include mobile{
+              font-size: 11px;
+              overflow: hidden;
+              padding: 5px 0;
+            }
+          }
+
+          span{
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: underline;
+            cursor: pointer;
+
+            @include mobile{
+              font-size: 12px;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+        }
+
+        .right{
+          flex: 8;
+          height: 100%;
+          //background-color: orange;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          overflow: hidden;
+
+          @include mobile{
+            flex: 6;
+          }
+
+          img{
+            width: 800px;
+            transform: rotate(-10deg);
+          }
+        }
+      }
+    }
+  }
+
+
+}

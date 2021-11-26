@@ -1,0 +1,34 @@
+.app{
+  height:  100vh;
+
+  .sections{
+    //Sizing here
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: orange;
+    position: relative;
+    top: 70px;
+
+    //Screen behaviour
+    scroll-behavior: smooth;
+
+    //Snap scrolling is mandatory for this style really
+    scroll-snap-type: y mandatory; //"proximity" is another one
+
+    //Remove the scrollbar for this nice snapping
+    scrollbar-width: none; //for firefox
+    &::-webkit-scrollbar{
+      display: none; //This whole setup is for other platforms! like ios
+    }
+
+    //Acting for every "child" in the .sections
+    > * {
+      //Sizing again
+      width: 100vw;
+      height: calc(100vh - 70px);
+
+      //Setting the scrolling snap alignment to the start of the component
+      scroll-snap-align: start;
+    }
+  }
+}
