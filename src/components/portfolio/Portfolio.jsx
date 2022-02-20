@@ -4,21 +4,21 @@ import {useState} from "react";
 import {useEffect} from "react";
 import {
     featuredPortfolio,
+    gamedevPortfolio,
     mathematicsPortfolio,
     systemsPortfolio,
-    gamedevPortfolio,
     webdevPortfolio
 } from "../../data";
 
 export default function Portfolio()
 {
-    const [selected, setSelected] = useState("featured");
+    const [selected, setSelected] = useState("math");
     const [data, setData] = useState([]);
 
     const list = [
         {
-            id: "featured",
-            title: "Recent",
+            id: "gamedev",
+            title: "Game Dev",
         },
         {
             id: "math",
@@ -29,20 +29,13 @@ export default function Portfolio()
             title: "Systems",
         },
         {
-            id: "gamedev",
-            title: "Game Dev",
-        },
-        {
             id: "web",
-            title: "Web Dev",
+            title: "Coursework",
         },
     ];
 
     useEffect(()=>{
         switch(selected){
-            case "featured":
-                setData(featuredPortfolio)
-                break;
             case "math":
                 setData(mathematicsPortfolio)
                 break;

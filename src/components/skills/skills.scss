@@ -1,0 +1,222 @@
+@import "../../global.scss";
+
+.testimonials{
+  background-color: $secondaryColor;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h1{
+    font-size: 40px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+  }
+
+  .container{
+    height: 88%;
+    width: 90%;
+
+    @include mobile{
+      width: 90%;
+    }
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    flex-direction: row;
+
+    overflow: hidden;
+
+    #glow{
+      //box-shadow: 0 0 10px 6px $mainColor;
+      animation: glow 2.5s ease infinite alternate;
+
+      @keyframes glow {
+        from{
+          box-shadow: 0 0 15px -6px $mainColor;
+        }
+        to{
+          box-shadow: 0 0 15px 4px $mainColor;
+        }
+      }
+    }
+
+
+    .card{
+      width: 130px;//120px;
+      height: 130px;//140px;
+      border-radius: 10px;
+
+      box-shadow: 0 0 15px -6px black;
+
+      margin: 10px 15px;
+      margin-bottom: 15px;
+
+      background-color: white;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      //flex-wrap: wrap;
+
+      padding: 12px;
+
+
+
+
+      .top{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        overflow: hidden;
+
+        .img{
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          overflow: hidden;
+
+          .user{
+            height: 90px;//100%;
+            width: 90px;//100%;
+            //border-radius: 20%;
+            object-fit: contain;
+
+
+
+            margin: 0 10px;
+
+
+          }
+        }
+      }
+
+
+
+      .bottom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h3{
+          padding-top: 15px;
+          font-size: 14px;
+          overflow: hidden;
+          object-fit: contain;
+        }
+      }
+
+    }
+
+    @media (max-width: #{1600px}){
+      .card{
+
+        width: 100px;
+        height: 100px;
+
+        .top{
+          .img{
+            .user{
+              height: 50px;//100%;
+              width: 50px;//100%;
+              //border-radius: 20%;
+              object-fit: contain;
+
+
+
+              margin: 0 10px;
+
+
+            }
+          }
+        }
+
+      }
+    }
+
+    @media (max-width: #{1260px}){
+    .card{
+
+      width: 90px;
+      height: 90px;
+
+    }
+  }
+
+
+    @include mobile{
+      .card{
+
+        width: 70px;
+        height: 70px;
+        border-radius: 5px;
+
+        box-shadow: 0 0 15px -6px black;
+
+        margin: 5px 5px;
+
+        background-color: white;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        //flex-wrap: wrap;
+
+        padding: 0px;
+
+
+        .top{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .img{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .user{
+              height: 40px;
+              width: 40px;
+              //border-radius: 50%;
+              object-fit: contain;
+
+              margin: 0;
+
+
+            }
+          }
+        }
+
+        .bottom{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+
+          h3{
+            padding-top: 5px;
+            font-size: 10px;
+            //display: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+          }
+        }
+
+      }
+    }
+  }
+}

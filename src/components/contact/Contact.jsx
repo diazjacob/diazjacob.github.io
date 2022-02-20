@@ -64,11 +64,13 @@ export default function Contact()
                             onChange={(e) => {setMessage(e.target.value)}}
                             required/>
                         <button type="Submit">Send</button>
-                        {messageSent && <span>Thanks! I'll reply soon :)</span>}
+                        {messageSent && <span>Thanks! I'll reply soon.</span>}
                     </form>
                 </div>
             </div>
         </div>
     )
 }
+
+
 

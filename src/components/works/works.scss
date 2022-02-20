@@ -7,8 +7,15 @@
   align-items: center;
   justify-content: center;
 
+  h1{
+    position: absolute;
+    top: 35px;
+    color: $secondaryColor;
+  }
+
   position: relative;
 
+    overflow: hidden;
 
   .arrow{
     width: 50px;
@@ -24,11 +31,11 @@
     }
 
     &.left{
-      left: 100px;
+      left: 80px;
       //background-color: orange; //for debug
     }
     &.right{
-      right: 100px;
+      right: 80px;
     }
 
     .arr{

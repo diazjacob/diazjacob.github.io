@@ -10,14 +10,14 @@ export default function Works()
         {
             id: 1,
             icon: <MobileFriendly/>,
-            title: "My Title1",
+            title: "Fractal Generation",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet tortor in tellus maximus vulputate. Suspendisse potenti. Donec eu metus ac velit facilisis luctus at eu orci.",
             img: "https://fractalfoundation.org/wp-content/uploads/2009/01/xoasjs-300x263.png",
         },
         {
             id: 2,
             icon: <MobileFriendly/>,
-            title: "My Title2",
+            title: "Stock Bot",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet tortor in tellus maximus. Suspendisse potenti. Donec eu metus ac velit facilisis luctus at eu orci.",
             img: "https://fractalfoundation.org/wp-content/uploads/2009/01/xoasjs-300x263.png",
         },
@@ -53,6 +53,7 @@ export default function Works()
 
     return(
         <div className="works" id="works">
+            <h1>Recent Work</h1>
             <div
                 className="slider"
                 style={{
